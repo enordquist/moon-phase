@@ -9,7 +9,7 @@ def semiellipse(r1, r2, y):
   return r1*np.sqrt(1-(y/r2)**2) 
 
 # get moon data
-date = "2026-04-22"
+date = "2026-04-21"
 coords = "39.29,-76.61"   # Baltimore, MD
 tz = -5                   # Eastern Time
 

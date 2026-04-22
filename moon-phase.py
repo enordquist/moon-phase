@@ -27,6 +27,10 @@ f = float(moon["fracillum"].replace('%',''))/100
 # Set up circle (pi*r**2) and ellipse (pi*r*r2)
 r = 1
 y = np.linspace(-r, r, 1000, endpoint=True)
+# Crescent illuminated fraction:
+#     ( pi/2 - pi/2*r2 )    
+# f =  ---------------   => r2 = 1 - 2*f
+#            pi
 # Beautifully, when f>0.5, r2 < 0, so that xe<0 (proper rendered shape)
 r2 = 1 - 2*f
 xc = semiellipse(r,r,y)
